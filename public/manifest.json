@@ -1,9 +1,9 @@
 {
-  "short_name": "Bravo New Tabs",
-  "name": "Bravo New Tabs",
+  "short_name": "Todo.Less",
+  "name": "webpack-dev-server",
   "version": "2.3",
   "manifest_version": 2,
-  "description": "A light weight new tab extension which shows a new awe-inspriring image every hour.",
+  "description": "A light weight todo app to help increase your productivity.",
   "icons": {
     "128": "icon_128.png"
   },
