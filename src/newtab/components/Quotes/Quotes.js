@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Quotes.css';
-import { QuoteService } from './../../../../services/QuoteService';
+import { QuoteService } from './../../services/QuoteService';
 
 export class Quotes extends Component {
     constructor() {

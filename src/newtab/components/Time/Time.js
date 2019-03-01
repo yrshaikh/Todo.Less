@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Time.css';
-import { CommonService } from '../../../../services/CommonService';
+import { CommonService } from './../../services/CommonService';
 
 export class Time extends Component {
     constructor() {
