@@ -1,8 +1,10 @@
 body {
-    color: #EEE;
+    color: #333;
     font-family: 'Montserrat', sans-serif;
     margin: auto;
-    background-color: black;
+    background-color: #eee;
     padding: none;
     min-height: 100%;
+    width: 800px;
+    margin-top: 25px;
 }
