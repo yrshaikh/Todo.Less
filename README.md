@@ -1,16 +1,7 @@
-# Todo.less
+### Developing locally
+To develop the app locally you can run `yarn start`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+### Testing as Chrome Extension
 
-## Build
-
-- `yarn build`: generate the production build
-- `yarn extension`: generate the development build
-
-## Running on local
-
-- `yarn build` will update the public folder with latest build.
-- Go to chrome://extensions/ and select "Load unpacked" option and select the same build folder.
-- Everytime you build after this setup, your extension should get updates automatically.
-
-
+### References
+https://github.com/mmazzarolo/chrome-another-tab
