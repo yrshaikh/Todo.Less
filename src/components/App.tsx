@@ -7,7 +7,7 @@ import { Card } from "./Card/Card";
 import "./App.scss";
 
 export const App: FC = () => {
-  return <div>
+  return <div className="App">
     <Card currentDateTime={new Date()}/>
   </div>;
 };
