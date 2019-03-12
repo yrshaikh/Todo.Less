@@ -8,6 +8,6 @@ import "./App.scss";
 
 export const App: FC = () => {
   return <div className="App">
-    <Card currentDateTime={new Date()}/>
+    <Card />
   </div>;
 };
