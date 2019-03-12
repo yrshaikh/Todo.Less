@@ -1,21 +1,33 @@
 import React from "react";
-
-interface Props {
-    currentDateTime: Date;
-}
+import { CardHeader } from "./components/CardHeader/CardHeader";
 
 interface State {
-    selectedDateTime: Date;
+    offset: number;
 }
 
-class Card extends React.PureComponent<Props, State> {
-    constructor(props: Props) {
+class Card extends React.PureComponent<{}, State> {
+    constructor(props: {}) {
         super(props);
-        this.state = { selectedDateTime: props.currentDateTime };
+        this.state = { offset: 0 };
     }
     public render(): JSX.Element {
-        if (!this.state.selectedDateTime) { return <div/>; }
-        return <div>I am a card</div>;
+        return (
+            <div className="Card">
+                {this.renderHeader()}
+            </div>
+        );
+    }
+    private renderHeader(): JSX.Element {
+        return <div className="Card">
+            <div className="Card__top">
+                <i className="fas fa-arrow-alt-circle-left" onClick={(e) => this.changeDate(1)} />
+                <CardHeader offset={this.state.offset} />
+                <i className="fas fa-arrow-alt-circle-right" onClick={(e) => this.changeDate(-1)} />
+            </div>
+        </div>;
+    }
+    private changeDate(change: number): void {
+        this.setState({ offset: this.state.offset + change });
     }
 }
 
